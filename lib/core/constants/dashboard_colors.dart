@@ -12,4 +12,5 @@ class DashboardColors {
   static const Color backgroundColor = Color(0XFFFAFAFA);
   static const Color justWhiter = Color(0XFFFFFFFF);
   static const Color justBlack = Color(0XFF000000);
+  static const Color drawerIconGrey = Color(0XFFB2B2B2);
 }
