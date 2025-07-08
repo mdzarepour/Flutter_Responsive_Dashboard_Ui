@@ -7,7 +7,7 @@ class DashboardStrings {
 
   // Menu Items -->
   static const String dashboard = 'Dashboard';
-  static const String recruitment = 'Recruitment';
+  static const String recuirtment = 'Recuirtment';
   static const String schedule = 'Schedule';
   static const String employees = 'Employee';
   static const String departments = 'Department';

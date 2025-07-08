@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/theme/dashboard_theme.dart';
-import 'package:responsive_dashboard/dashboard_screen/desktop_dashboard_screen.dart';
+import 'package:responsive_dashboard/dashboard_screen/dashboard_screen.dart';
 
 void main(List<String> args) {
   runApp(Application());
@@ -14,7 +14,7 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: DashboardTheme.dashboardTheme,
-      home: DesktopDashboardScreen(),
+      home: DashboardScreen(),
     );
   }
 }
