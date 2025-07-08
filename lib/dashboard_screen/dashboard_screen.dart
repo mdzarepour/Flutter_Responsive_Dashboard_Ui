@@ -18,7 +18,11 @@ class DashboardScreen extends StatelessWidget {
             if (screenType != ScreenType.mobile) DashboardLeftLayout(),
             DashboardCenterLayout(),
             Expanded(
-              flex: screenType == ScreenType.mobile ? 0 : 3,
+              flex:
+                  screenType == ScreenType.mobile ||
+                      screenType == ScreenType.tablet
+                  ? 0
+                  : 3,
               child: Center(child: Container(color: Colors.blue)),
             ),
           ],

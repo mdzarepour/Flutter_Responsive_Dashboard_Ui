@@ -16,8 +16,16 @@ class DashboardLeftLayout extends StatelessWidget {
     ScreenType screenType = ResponsiveHelper.getScreenType(context);
     return Expanded(
       flex: screenType == ScreenType.desktop ? 2 : 1,
-      child: ColoredBox(
-        color: DashboardColors.backgroundColor,
+      child: Container(
+        decoration: BoxDecoration(
+          color: DashboardColors.backgroundColor,
+          border: Border(
+            right: BorderSide(
+              width: 0.2,
+              color: DashboardColors.drawerIconGrey,
+            ),
+          ),
+        ),
         child: ListView(
           padding: EdgeInsets.symmetric(vertical: 50),
           children: [

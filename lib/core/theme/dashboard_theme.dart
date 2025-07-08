@@ -6,6 +6,7 @@ class DashboardTheme {
   DashboardTheme._();
   static ThemeData dashboardTheme = ThemeData(
     textTheme: DashboardTextTheme.textTheme,
+    scaffoldBackgroundColor: DashboardColors.justWhiter,
     listTileTheme: ListTileThemeData(
       titleTextStyle: DashboardTextTheme.textTheme.titleMedium,
       iconColor: DashboardColors.drawerIconGrey,
