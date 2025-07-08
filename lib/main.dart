@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/theme/dashboard_theme.dart';
-import 'package:responsive_dashboard/screens/home_screen/home_screen.dart';
+import 'package:responsive_dashboard/dashboard_screen/dashboard_layouts/desktop_dashboard_screen.dart';
+import 'package:responsive_dashboard/dashboard_screen/dashboard_layouts/mobile_dashboard_screen.dart';
+import 'package:responsive_dashboard/dashboard_screen/dashboard_layouts/tablet_dashboard_scree.dart';
+import 'package:responsive_dashboard/responsive_layout_builder.dart';
 
 void main(List<String> args) {
   runApp(Application());
@@ -14,7 +17,11 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: DashboardTheme.dashboardTheme,
-      home: HomeScreen(),
+      home: ResponsiveLayoutBuilder(
+        desktopLayout: DesktopDashboardScreen(),
+        mobileLayout: MobileDashboardScreen(),
+        tabletLayout: TabletDashboardScree(),
+      ),
     );
   }
 }
