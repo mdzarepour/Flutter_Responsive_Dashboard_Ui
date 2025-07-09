@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_strings.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_bargraph.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_header.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_info_row.dart';
 
@@ -23,6 +24,7 @@ class DashboardMainContentWidget extends StatelessWidget {
         ),
         const DashboardMainContentWidgetInfoRow(),
         const SizedBox(height: 40),
+        const DashboardMainContentWidgetBargraph(),
       ],
     );
   }

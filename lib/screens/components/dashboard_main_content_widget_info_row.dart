@@ -19,7 +19,7 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
           crossAxisCount: 3,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
-          childAspectRatio: 2,
+          childAspectRatio: 2 / 1,
         ),
         itemBuilder: (context, index) {
           return _mainContentWidgetInfoCard(data, index, textTheme);
