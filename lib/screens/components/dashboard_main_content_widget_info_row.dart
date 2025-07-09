@@ -1,49 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/core/utils/custom_card_widget.dart';
 import 'package:responsive_dashboard/data/info_cards_data.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_info_row_card.dart';
 
 class DashboardMainContentWidgetInfoRow extends StatelessWidget {
   const DashboardMainContentWidgetInfoRow({super.key});
 
   @override
   Widget build(BuildContext context) {
-    TextTheme textTheme = Theme.of(context).textTheme;
     final data = InfoCardsData();
     return SizedBox(
       height: 150,
       width: double.infinity,
-      child: GridView.builder(
-        padding: const EdgeInsets.only(top: 20),
-        itemCount: data.infoCardsData.length,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-          childAspectRatio: 2 / 1,
-        ),
-        itemBuilder: (context, index) {
-          return _mainContentWidgetInfoCard(data, index, textTheme);
-        },
-      ),
-    );
-  }
-
-  Widget _mainContentWidgetInfoCard(
-    InfoCardsData data,
-    int index,
-    TextTheme textTheme,
-  ) {
-    return CustomCardWidget(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Row(
         spacing: 15,
         children: [
-          Icon(data.infoCardsData[index].icon),
-          Text(style: textTheme.labelMedium, data.infoCardsData[index].title),
-          Text(style: textTheme.labelMedium, data.infoCardsData[index].status),
+          DashboardMainContentWidgetInfoRowCard(data: data, index: 0),
+          DashboardMainContentWidgetInfoRowCard(data: data, index: 1),
+          DashboardMainContentWidgetInfoRowCard(data: data, index: 2),
         ],
       ),
+      // child: GridView.builder(
+      //   padding: const EdgeInsets.only(top: 20),
+      //   itemCount: data.infoCardsData.length,
+      //   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      //     crossAxisCount: 3,
+      //     crossAxisSpacing: 20,
+      //     mainAxisSpacing: 20,
+      //     childAspectRatio: 2 / 1,
+      //   ),
+      //   itemBuilder: (context, index) {
+      //     return _mainContentWidgetInfoCard(data, index, textTheme);
+      //   },
+      // ),
     );
   }
 }
