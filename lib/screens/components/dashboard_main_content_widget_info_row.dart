@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:responsive_dashboard/core/utils/custom_card_widget.dart';
 import 'package:responsive_dashboard/data/info_cards_data.dart';
 
@@ -11,7 +10,7 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     final data = InfoCardsData();
     return SizedBox(
-      height: double.maxFinite,
+      height: 150,
       width: double.infinity,
       child: GridView.builder(
         padding: const EdgeInsets.only(top: 20),
@@ -20,7 +19,7 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
           crossAxisCount: 3,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
-          childAspectRatio: 1.8,
+          childAspectRatio: 2,
         ),
         itemBuilder: (context, index) {
           return _mainContentWidgetInfoCard(data, index, textTheme);

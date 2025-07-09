@@ -18,12 +18,11 @@ class DashboardMainContentWidget extends StatelessWidget {
         const Divider(color: DashboardColors.drawerIconGrey, thickness: 0.5),
         const SizedBox(height: 30),
         Text(
-          style: Theme.of(
-            context,
-          ).textTheme.labelMedium!.copyWith(fontSize: 26),
+          style: Theme.of(context).textTheme.labelMedium,
           DashboardStrings.dashboard,
         ),
         const DashboardMainContentWidgetInfoRow(),
+        const SizedBox(height: 40),
       ],
     );
   }
