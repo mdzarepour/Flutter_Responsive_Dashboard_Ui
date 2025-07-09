@@ -11,11 +11,11 @@ class DashboardScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Expanded(
+            const Expanded(
               flex: 2,
               child: SizedBox(child: DashboardSideMenuWidget()),
             ),
-            Expanded(flex: 7, child: DashboardMainContentWidget()),
+            const Expanded(flex: 7, child: DashboardMainContentWidget()),
             Expanded(flex: 3, child: Container(color: Colors.green)),
           ],
         ),

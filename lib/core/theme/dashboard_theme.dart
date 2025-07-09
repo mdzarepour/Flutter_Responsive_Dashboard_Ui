@@ -5,21 +5,21 @@ import 'package:responsive_dashboard/core/theme/dashboard_text_theme.dart';
 class DashboardTheme {
   DashboardTheme._();
   static ThemeData dashboardTheme = ThemeData(
-    iconTheme: IconThemeData(color: DashboardColors.drawerIconGrey),
+    iconTheme: const IconThemeData(color: DashboardColors.drawerIconGrey),
     textTheme: DashboardTextTheme.textTheme,
     inputDecorationTheme: InputDecorationTheme(
       suffixIconColor: DashboardColors.drawerIconGrey,
-      contentPadding: EdgeInsets.only(bottom: 10, left: 20),
+      contentPadding: const EdgeInsets.only(bottom: 10, left: 20),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(5),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: DashboardColors.drawerIconGrey,
           width: 0.3,
         ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(5),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: DashboardColors.drawerIconGrey,
           width: 0.3,
         ),

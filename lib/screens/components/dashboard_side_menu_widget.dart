@@ -16,7 +16,7 @@ class _DashboardSideMenuWidgetState extends State<DashboardSideMenuWidget> {
   Widget build(BuildContext context) {
     final data = MenuItemsData();
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: DashboardColors.backgroundColor,
         border: Border(
           right: BorderSide(
@@ -26,7 +26,7 @@ class _DashboardSideMenuWidgetState extends State<DashboardSideMenuWidget> {
         ),
       ),
       child: ListView.builder(
-        padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
         itemCount: data.menuItemsData.length,
         itemBuilder: (context, index) => _sideMenuWidgetListTile(index, data),
       ),

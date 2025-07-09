@@ -1,12 +1,12 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
 
 class InfoCardModel {
   final String title;
-  final String value;
+  final IconData icon;
   final String status;
   InfoCardModel({
     required this.status,
     required this.title,
-    required this.value,
+    required this.icon,
   });
 }

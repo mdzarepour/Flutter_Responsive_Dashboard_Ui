@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:responsive_dashboard/core/utils/custom_card_widget.dart';
 import 'package:responsive_dashboard/data/info_cards_data.dart';
 
 class DashboardMainContentWidgetInfoRow extends StatelessWidget {
@@ -13,9 +14,9 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
       height: double.maxFinite,
       width: double.infinity,
       child: GridView.builder(
-        padding: EdgeInsets.only(top: 20),
+        padding: const EdgeInsets.only(top: 20),
         itemCount: data.infoCardsData.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
@@ -33,23 +34,14 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
     int index,
     TextTheme textTheme,
   ) {
-    return Container(
-      padding: EdgeInsets.only(left: 20),
-      decoration: BoxDecoration(
-        border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.1),
-        borderRadius: BorderRadiusDirectional.circular(10),
-        color: DashboardColors.backgroundColor,
-      ),
+    return CustomCardWidget(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: 15,
         children: [
+          Icon(data.infoCardsData[index].icon),
           Text(style: textTheme.labelMedium, data.infoCardsData[index].title),
-          Text(
-            style: textTheme.labelMedium!.copyWith(fontSize: 30),
-            data.infoCardsData[index].value,
-          ),
           Text(style: textTheme.labelMedium, data.infoCardsData[index].status),
         ],
       ),

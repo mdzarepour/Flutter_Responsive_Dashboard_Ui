@@ -10,20 +10,20 @@ class DashboardMainContentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(horizontal: 50),
+      padding: const EdgeInsets.symmetric(horizontal: 50),
       children: [
-        SizedBox(height: 50),
-        DashboardMainContentWidgetHeader(),
-        SizedBox(height: 30),
-        Divider(color: DashboardColors.drawerIconGrey, thickness: 0.5),
-        SizedBox(height: 30),
+        const SizedBox(height: 50),
+        const DashboardMainContentWidgetHeader(),
+        const SizedBox(height: 30),
+        const Divider(color: DashboardColors.drawerIconGrey, thickness: 0.5),
+        const SizedBox(height: 30),
         Text(
           style: Theme.of(
             context,
           ).textTheme.labelMedium!.copyWith(fontSize: 26),
           DashboardStrings.dashboard,
         ),
-        DashboardMainContentWidgetInfoRow(),
+        const DashboardMainContentWidgetInfoRow(),
       ],
     );
   }

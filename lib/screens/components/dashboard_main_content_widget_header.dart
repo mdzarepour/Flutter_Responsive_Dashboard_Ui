@@ -20,7 +20,7 @@ class DashboardMainContentWidgetHeader extends StatelessWidget {
             cursorColor: DashboardColors.drawerIconGrey,
             cursorWidth: 0.7,
             decoration: InputDecoration(
-              suffixIcon: Icon(Iconsax.search_normal_1_copy, size: 22),
+              suffixIcon: const Icon(Iconsax.search_normal_1_copy, size: 22),
               hint: Text(
                 DashboardStrings.search,
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
