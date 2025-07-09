@@ -29,6 +29,7 @@ class DashboardTheme {
     ),
     scaffoldBackgroundColor: DashboardColors.justWhite,
     listTileTheme: ListTileThemeData(
+      contentPadding: EdgeInsets.zero,
       titleTextStyle: DashboardTextTheme.textTheme.titleMedium,
       iconColor: DashboardColors.drawerIconGrey,
     ),

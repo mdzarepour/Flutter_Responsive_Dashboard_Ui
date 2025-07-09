@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
 import 'package:responsive_dashboard/models/bar_graph_model.dart';
 import 'package:responsive_dashboard/models/graph_model.dart';
