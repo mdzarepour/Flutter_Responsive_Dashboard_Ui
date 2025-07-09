@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
-import 'package:responsive_dashboard/data/menu_item_data.dart';
+import 'package:responsive_dashboard/data/menu_items_data.dart';
 
-class SideMenuWidget extends StatefulWidget {
-  const SideMenuWidget({super.key});
+class DashboardSideMenuWidget extends StatefulWidget {
+  const DashboardSideMenuWidget({super.key});
 
   @override
-  State<SideMenuWidget> createState() => _SideMenuWidgetState();
+  State<DashboardSideMenuWidget> createState() =>
+      _DashboardSideMenuWidgetState();
 }
 
-class _SideMenuWidgetState extends State<SideMenuWidget> {
+class _DashboardSideMenuWidgetState extends State<DashboardSideMenuWidget> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    final data = MenuItemData();
+    final data = MenuItemsData();
     return Container(
       decoration: BoxDecoration(
         color: DashboardColors.backgroundColor,
@@ -32,7 +33,7 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
     );
   }
 
-  Widget _sideMenuWidgetListTile(int index, MenuItemData data) {
+  Widget _sideMenuWidgetListTile(int index, MenuItemsData data) {
     final bool isSelected = index == selectedIndex;
     return ListTile(
       onTap: () {

@@ -20,13 +20,13 @@ class DashboardStrings {
 
   // Recruitment Overview -->
   static const String availablePositions = 'Available Position';
-  static const String urgentlyNeededCount = '4 Urgently needed';
+  static const String urgentlyNeededCount = '8 Urgently needed';
   static const String openJobs = 'Job Open';
-  static const String activeHiringCount = '4 Active hiring';
+  static const String activeHiringCount = '11 Active hiring';
 
   // Employee Overview -->
   static const String newEmployeeTitle = 'New Employees';
-  static const String departmentCountLabel = '4 Departments';
+  static const String departmentCountLabel = '6 Departments';
   static const String totalEmployeeCount = 'Total Employees';
   static const String maleEmployees = '100 Men';
   static const String femaleEmployees = '90 Women';

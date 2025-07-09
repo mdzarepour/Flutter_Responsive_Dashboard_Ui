@@ -10,7 +10,7 @@ class DashboardColors {
   static const Color secondaryColor = Color(0XFFFF9B6A);
   static const Color tertiaryColor = Color(0XFF161E54);
   static const Color backgroundColor = Color(0XFFFAFAFA);
-  static const Color justWhiter = Color(0XFFFFFFFF);
+  static const Color justWhite = Color(0XFFFFFFFF);
   static const Color justBlack = Color(0XFF000000);
   static const Color drawerIconGrey = Color(0XFFB2B2B2);
   static const Color containerBlue = Color(0XFFE8F0FB);

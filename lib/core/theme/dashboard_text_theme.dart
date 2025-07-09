@@ -41,7 +41,7 @@ class DashboardTextTheme {
       fontWeight: FontWeight.w400,
     ),
     labelSmall: GoogleFonts.poppins(
-      color: DashboardColors.justWhiter,
+      color: DashboardColors.justWhite,
       fontSize: 10,
       fontWeight: FontWeight.w400,
     ),
