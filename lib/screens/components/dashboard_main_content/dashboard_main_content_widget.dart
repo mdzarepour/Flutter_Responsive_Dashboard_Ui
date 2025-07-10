@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_strings.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_bargraph_row.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_header.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_info_row.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_table.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_bargraph_row.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_header.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_info_row.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_table.dart';
 
 class DashboardMainContentWidget extends StatelessWidget {
   const DashboardMainContentWidget({super.key});

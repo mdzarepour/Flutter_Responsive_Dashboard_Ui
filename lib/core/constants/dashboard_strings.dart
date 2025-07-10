@@ -62,6 +62,8 @@ class DashboardStrings {
   static const String viewAllActivities = 'See All Activities';
 
   // Schedule -->
+  static const String frontEndDevelopers =
+      'Sort Front-end developer candidates';
   static const String upcomingSchedule = 'Upcoming Schedule';
   static const String schedulePriority = 'Priority';
   static const String reviewApplications = 'Review candidate applications';

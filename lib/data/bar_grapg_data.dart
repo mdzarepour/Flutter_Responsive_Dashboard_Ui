@@ -5,7 +5,7 @@ import 'package:responsive_dashboard/models/graph_model.dart';
 class BarGrapgData {
   final List<BarGraphModel> barGraphsData = [
     BarGraphModel(
-      color: DashboardColors.drawerIconGrey,
+      color: DashboardColors.containerBlue,
       label: 'Activity level',
       graph: [
         GraphModel(x: 0, y: 11),
@@ -20,7 +20,7 @@ class BarGrapgData {
       ],
     ),
     BarGraphModel(
-      color: DashboardColors.drawerIconGrey,
+      color: DashboardColors.containerOrange,
       label: 'Hydrate level',
       graph: [
         GraphModel(x: 0, y: 7),

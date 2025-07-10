@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_strings.dart';
 import 'package:responsive_dashboard/models/table_item_model.dart';
 

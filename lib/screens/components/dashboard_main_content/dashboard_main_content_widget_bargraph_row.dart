@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/data/bar_grapg_data.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_bargraph_row_card.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_bargraph_row_card.dart';
 
 class DashboardMainContentWidgetBargraphRow extends StatelessWidget {
   const DashboardMainContentWidgetBargraphRow({super.key});

@@ -21,8 +21,16 @@ class DashboardMainContentWidgetInfoRowCard extends StatelessWidget {
           spacing: 15,
           children: [
             Icon(data.infoCardsData[index].icon),
-            Text(style: textTheme.labelMedium, data.infoCardsData[index].title),
             Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: textTheme.labelMedium,
+              data.infoCardsData[index].title,
+            ),
+            Text(
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+
               style: textTheme.labelMedium,
               data.infoCardsData[index].status,
             ),

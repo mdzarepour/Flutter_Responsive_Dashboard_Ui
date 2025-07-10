@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/data/info_cards_data.dart';
-import 'package:responsive_dashboard/screens/components/dashboard_main_content_widget_info_row_card.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_info_row_card.dart';
 
 class DashboardMainContentWidgetInfoRow extends StatelessWidget {
   const DashboardMainContentWidgetInfoRow({super.key});
