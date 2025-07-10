@@ -11,26 +11,32 @@ class DashboardMainContentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.symmetric(horizontal: 50),
-      children: [
-        const SizedBox(height: 20),
-        const DashboardMainContentWidgetHeader(),
-        const SizedBox(height: 30),
-        const Divider(color: DashboardColors.drawerIconGrey, thickness: 0.5),
-        const SizedBox(height: 20),
-        Text(
-          style: Theme.of(context).textTheme.labelMedium,
-          DashboardStrings.dashboard,
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 50),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const DashboardMainContentWidgetHeader(),
+            const SizedBox(height: 30),
+            const Divider(
+              color: DashboardColors.drawerIconGrey,
+              thickness: 0.5,
+            ),
+            const SizedBox(height: 20),
+            Text(
+              style: Theme.of(context).textTheme.labelMedium,
+              DashboardStrings.dashboard,
+            ),
+            const SizedBox(height: 10),
+            const DashboardMainContentWidgetInfoRow(),
+            const SizedBox(height: 40),
+            const DashboardMainContentWidgetBargraphRow(),
+            const SizedBox(height: 40),
+            const DashboardMainContentWidgetTable(),
+          ],
         ),
-        const SizedBox(height: 10),
-        const DashboardMainContentWidgetInfoRow(),
-        const SizedBox(height: 40),
-        const DashboardMainContentWidgetBargraphRow(),
-        const SizedBox(height: 40),
-        const DashboardMainContentWidgetTable(),
-        const SizedBox(height: 40),
-      ],
+      ),
     );
   }
 }

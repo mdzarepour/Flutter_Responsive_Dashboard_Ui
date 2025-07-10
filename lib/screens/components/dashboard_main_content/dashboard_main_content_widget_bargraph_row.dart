@@ -10,14 +10,14 @@ class DashboardMainContentWidgetBargraphRow extends StatelessWidget {
     final data = BarGrapgData();
     return SizedBox(
       width: double.infinity,
-      height: 220,
+      height: 210,
       child: GridView.builder(
         itemCount: data.barGraphsData.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 15,
           crossAxisSpacing: 15,
-          childAspectRatio: 1.78 / 1,
+          childAspectRatio: 2 / 1,
         ),
         itemBuilder: (context, index) {
           return DashboardMainContentWidgetBargraphRowCard(

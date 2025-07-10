@@ -11,6 +11,7 @@ class DashboardActivityWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
       decoration: const BoxDecoration(
         color: DashboardColors.justWhite,
         border: Border(
@@ -20,19 +21,16 @@ class DashboardActivityWidget extends StatelessWidget {
           ),
         ),
       ),
-      child: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+      child: Column(
+        spacing: 10,
         children: [
           const DashboardActivityWidgetPichartCard(),
-          const SizedBox(height: 14),
           Text(
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.labelMedium,
             'Details',
           ),
-          const SizedBox(height: 50),
-          const DashboardActivityWidgetSchedule(),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           const DashboardActivityWidgetSchedule(),
         ],
       ),

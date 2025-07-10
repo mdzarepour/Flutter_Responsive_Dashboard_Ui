@@ -10,27 +10,25 @@ class DashboardActivityWidgetSchedule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final data = ScheduleData();
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
-        decoration: BoxDecoration(
-          color: DashboardColors.justWhite,
-          borderRadius: BorderRadius.circular(15),
-          border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              textAlign: TextAlign.center,
-              DashboardStrings.upcomingSchedule,
-              style: Theme.of(context).textTheme.labelMedium,
-            ),
-            const SizedBox(height: 20),
-            for (int index = 0; index < data.schedules.length; index++)
-              DashboardActivityWidgetScheduleCard(data: data, index: index),
-          ],
-        ),
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+      decoration: BoxDecoration(
+        color: DashboardColors.backgroundColor,
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            textAlign: TextAlign.center,
+            DashboardStrings.upcomingSchedule,
+            style: Theme.of(context).textTheme.labelMedium,
+          ),
+          const SizedBox(height: 20),
+          for (int index = 0; index < data.schedules.length; index++)
+            DashboardActivityWidgetScheduleCard(data: data, index: index),
+        ],
       ),
     );
   }

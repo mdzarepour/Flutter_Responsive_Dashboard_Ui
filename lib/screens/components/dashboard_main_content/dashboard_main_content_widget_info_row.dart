@@ -9,7 +9,7 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final data = InfoCardsData();
     return SizedBox(
-      height: 150,
+      height: 155,
       width: double.infinity,
       child: GridView.builder(
         padding: const EdgeInsets.only(top: 20),
