@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
-import 'package:responsive_dashboard/core/utils/custom_card_widget.dart';
+import 'package:responsive_dashboard/core/utils/helpers/responsive_helper.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_activity/dashboard_activity_widget_pichart_card.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_activity/dashboard_activity_widget_schedule.dart';
 
@@ -12,14 +11,10 @@ class DashboardActivityWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(13),
         color: DashboardColors.justWhite,
-        border: Border(
-          left: BorderSide(
-            color: DashboardColors.secondarySubtitleColor,
-            width: 0.2,
-          ),
-        ),
+        border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
       ),
       child: Column(
         spacing: 10,

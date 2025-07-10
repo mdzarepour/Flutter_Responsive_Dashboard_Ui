@@ -2,18 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_strings.dart';
+import 'package:responsive_dashboard/core/utils/helpers/responsive_helper.dart';
 
 class DashboardMainContentWidgetHeader extends StatelessWidget {
   const DashboardMainContentWidgetHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final bool isDesktop =
+        ResponsiveHelper.getScreenType(context) == ScreenType.desktop;
     Size size = MediaQuery.of(context).size;
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        if (!isDesktop)
+          InkWell(
+            onTap: () {
+              Scaffold.of(context).openDrawer();
+            },
+            child: const Icon(Iconsax.menu_1, size: 35),
+          ),
+        const SizedBox(width: 10),
         SizedBox(
-          width: size.width * 0.3,
+          width: size.width * 0.35,
           height: size.height * 0.058,
           child: TextField(
             style: Theme.of(context).textTheme.labelMedium,
@@ -30,6 +40,7 @@ class DashboardMainContentWidgetHeader extends StatelessWidget {
             ),
           ),
         ),
+        const Spacer(),
         Row(
           mainAxisSize: MainAxisSize.max,
           spacing: 20,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_strings.dart';
+import 'package:responsive_dashboard/core/utils/helpers/responsive_helper.dart';
+import 'package:responsive_dashboard/screens/components/dashboard_activity/dashboard_activity_widget.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_bargraph_row.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_header.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget_info_row.dart';
@@ -11,6 +13,8 @@ class DashboardMainContentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isDesktop =
+        ResponsiveHelper.getScreenType(context) == ScreenType.desktop;
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 50),
@@ -30,10 +34,12 @@ class DashboardMainContentWidget extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             const DashboardMainContentWidgetInfoRow(),
-            const SizedBox(height: 40),
+            const SizedBox(height: 10),
             const DashboardMainContentWidgetBargraphRow(),
             const SizedBox(height: 40),
             const DashboardMainContentWidgetTable(),
+            SizedBox(height: 40),
+            if (!isDesktop) DashboardActivityWidget(),
           ],
         ),
       ),

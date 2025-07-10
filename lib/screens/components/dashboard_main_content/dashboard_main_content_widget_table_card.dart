@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
-import 'package:responsive_dashboard/core/utils/custom_card_widget.dart';
+import 'package:responsive_dashboard/core/utils/widgets/custom_card_widget.dart';
 import 'package:responsive_dashboard/data/table_items_data.dart';
 
 class DashboardMainContentWidgetTableCard extends StatelessWidget {
@@ -35,8 +35,14 @@ class DashboardMainContentWidgetTableCard extends StatelessWidget {
               ],
             ),
           ),
-          title: Text(data.tableItemsData[index].description),
+          title: Text(
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            data.tableItemsData[index].description,
+          ),
           subtitle: Text(
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
             style: textTheme.labelSmall!.copyWith(
               color: DashboardColors.secondarySubtitleColor,
             ),
