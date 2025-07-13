@@ -1,7 +1,7 @@
-# Flutter Responsive Daqshboard Ui
+# Flutter Responsive Dashboard Ui
 
 
-Dashboard is a small flutter project for practice and learn how to implement responsive ui's with native flutter features 
+Dashboard is a small flutter project for practice and learn how to implement responsive ui's with native flutter features .
 its optimized to use in desktop,tablet and mobile
 <br>
 <br>
