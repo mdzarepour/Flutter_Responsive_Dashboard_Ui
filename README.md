@@ -8,10 +8,10 @@ Dashboard is a small web based flutter project for practice and learn how to imp
 <p align="left">
 
 
-<img width="767.6" height="388" alt="Screenshot 2025-07-13 213950" src="https://github.com/user-attachments/assets/15e0db7e-5579-484b-b2cb-5209fe75be24" />
+<img width="1918" height="970" alt="Screenshot 2025-07-13 230324" src="https://github.com/user-attachments/assets/c105bc54-3453-4890-b586-22edd4c879e5" />
+<img width="200" alt="Screenshot_20250713_225615" src="https://github.com/user-attachments/assets/5fc360bb-5661-4f70-bed4-43d0e928b913" />
 
-
-  
+<img width="200" alt="Screenshot_20250713_225729" src="https://github.com/user-attachments/assets/34b7cfa5-1d31-4506-b39e-4033f73050fb" />
 
 
 </p>
