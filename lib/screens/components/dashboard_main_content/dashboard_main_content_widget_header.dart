@@ -22,9 +22,7 @@ class DashboardMainContentWidgetHeader extends StatelessWidget {
             child: const Icon(Iconsax.menu_1, size: 35),
           ),
         const SizedBox(width: 10),
-        SizedBox(
-          width: size.width * 0.35,
-          height: size.height * 0.058,
+        Expanded(
           child: TextField(
             style: Theme.of(context).textTheme.labelMedium,
             cursorColor: DashboardColors.drawerIconGrey,
@@ -40,16 +38,18 @@ class DashboardMainContentWidgetHeader extends StatelessWidget {
             ),
           ),
         ),
-        const Spacer(),
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          spacing: 20,
-          children: [
-            Icon(size: size.height * 0.045, Iconsax.notification_1),
-            Icon(size: size.height * 0.045, Iconsax.message),
-            Icon(size: size.height * 0.045, Iconsax.profile_2user),
-          ],
-        ),
+
+        SizedBox(width: isDesktop ? 20 : 0),
+        if (isDesktop)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            spacing: 20,
+            children: [
+              Icon(size: size.height * 0.045, Iconsax.notification_1),
+              Icon(size: size.height * 0.045, Iconsax.message),
+              Icon(size: size.height * 0.045, Iconsax.profile_2user),
+            ],
+          ),
       ],
     );
   }

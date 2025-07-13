@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/constants/dashboard_colors.dart';
-import 'package:responsive_dashboard/core/utils/helpers/responsive_helper.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_activity/dashboard_activity_widget_pichart_card.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_activity/dashboard_activity_widget_schedule.dart';
 

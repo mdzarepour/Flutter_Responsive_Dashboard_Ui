@@ -1,4 +1,3 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/utils/helpers/responsive_helper.dart';
 import 'package:responsive_dashboard/screens/components/dashboard_main_content/dashboard_main_content_widget.dart';

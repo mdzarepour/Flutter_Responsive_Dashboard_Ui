@@ -15,10 +15,10 @@ class DashboardActivityWidgetScheduleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      margin: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      margin: const EdgeInsets.only(top: 20),
       decoration: BoxDecoration(
-        color: DashboardColors.justWhite,
+        color: DashboardColors.backgroundColor,
         borderRadius: BorderRadius.circular(5),
         border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
       ),

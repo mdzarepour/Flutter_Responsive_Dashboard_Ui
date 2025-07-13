@@ -13,12 +13,13 @@ class DashboardMainContentWidgetInfoRow extends StatelessWidget {
     final data = InfoCardsData();
     return GridView.builder(
       shrinkWrap: true,
+      physics: const BouncingScrollPhysics(),
       itemCount: data.infoCardsData.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: isMobile ? 1 : 3,
         mainAxisSpacing: 15,
         crossAxisSpacing: 15,
-        childAspectRatio: isMobile ? 1 / 0.3 : 2 / 1.1,
+        mainAxisExtent: 120,
       ),
       itemBuilder: (context, index) {
         return DashboardMainContentWidgetInfoRowCard(data: data, index: index);
