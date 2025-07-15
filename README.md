@@ -7,10 +7,10 @@ its optimized to use in desktop,tablet and mobile
 <br>
 
 <p align="left">
-<img 
-width="1080" height="720"  alt="Screenshot 2025-07-13 230324" src="https://github.com/user-attachments/assets/c105bc54-3453-4890-b586-22edd4c879e5" />
-<img width="200" alt="Screenshot_20250713_225615" src="https://github.com/user-attachments/assets/5fc360bb-5661-4f70-bed4-43d0e928b913" />
-<img width="200" alt="Screenshot_20250713_225729" src="https://github.com/user-attachments/assets/34b7cfa5-1d31-4506-b39e-4033f73050fb" />
+<img width="1920" height="1080" alt="Screenshot 2025-07-16 002501" src="https://github.com/user-attachments/assets/61a19902-a253-494a-85a2-9637fa50716e" />
+<img width="200"  alt="Screenshot_20250716_003631" src="https://github.com/user-attachments/assets/b55bd3c4-4d82-4a40-99e2-4bbe793957ca" />
+<img width="200"  alt="Screenshot_20250716_003715" src="https://github.com/user-attachments/assets/9d85d86c-ba5e-4cca-94f7-d2a817a4a1c8" />
+
 </p>
 
 ## how to test ?
