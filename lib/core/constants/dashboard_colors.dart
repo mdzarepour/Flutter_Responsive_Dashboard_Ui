@@ -2,20 +2,31 @@ import 'package:flutter/material.dart';
 
 class DashboardColors {
   DashboardColors._();
-  static const Color primaryTitleColor = Color(0XFF303030);
-  static const Color primarySubtitleColor = Color(0XFF686868);
-  static const Color secondaryTitleColor = Color(0XFF303030);
-  static const Color secondarySubtitleColor = Color(0XFF686868);
-  static const Color mainColor = Color(0XFFFF5151);
-  static const Color secondaryColor = Color(0XFFFF9B6A);
-  static const Color tertiaryColor = Color(0XFF161E54);
-  static const Color backgroundColor = Color(0XFFFAFAFA);
-  static const Color justWhite = Color(0XFFFFFFFF);
-  static const Color justBlack = Color(0XFF000000);
-  static const Color drawerIconGrey = Color(0XFFB2B2B2);
-  static const Color containerBlue = Color.fromARGB(255, 170, 205, 255);
-  static const Color textBlue = Color(0XFF3786F1);
-  static const Color containerPink = Color.fromARGB(255, 255, 177, 238);
-  static const Color textPink = Color(0XFFEE61CF);
-  static const Color containerOrange = Color.fromARGB(255, 255, 206, 182);
+
+  static const Color scaffoldDarkBackGround = Color(0xff242A32);
+  static const Color scaffoldLightBackGround = Color.fromARGB(255, 54, 54, 54);
+  static const Color materialWhite = Color.fromARGB(60, 255, 255, 255);
+  static const Color materialSecondGrey = Color(0xff67686D);
+  static const Color materialFirstGrey = Color(0xff3A3F47);
+  static const Color materialBlue = Color(0xff0296E5);
+  static const Color materialRed = Colors.red;
+  static const Color materialYellow = Color(0xffFF8700);
+
+  static const Color primaryTitleColor = materialWhite;
+  static const Color primarySubtitleColor = materialSecondGrey;
+  static const Color secondaryTitleColor = materialWhite;
+  static const Color secondarySubtitleColor = materialSecondGrey;
+  static const Color mainColor = materialBlue;
+  static const Color secondaryColor = materialYellow;
+  static const Color tertiaryColor = materialBlue;
+  static const Color backgroundColor = scaffoldDarkBackGround;
+  static const Color justWhite = materialWhite;
+  static const Color justBlack = materialWhite;
+  static const Color drawerIconGrey = materialSecondGrey;
+
+  static const Color containerBlue = materialFirstGrey;
+  static const Color textBlue = materialBlue;
+  static const Color containerPink = materialFirstGrey;
+  static const Color textPink = materialRed;
+  static const Color containerOrange = materialFirstGrey;
 }

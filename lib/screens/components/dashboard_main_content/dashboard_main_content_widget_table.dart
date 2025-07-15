@@ -14,7 +14,7 @@ class DashboardMainContentWidgetTable extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
       decoration: BoxDecoration(
-        color: DashboardColors.justWhite,
+        color: DashboardColors.scaffoldDarkBackGround,
         borderRadius: BorderRadius.circular(15),
         border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
       ),

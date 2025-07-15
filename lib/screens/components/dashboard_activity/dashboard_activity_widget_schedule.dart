@@ -11,22 +11,20 @@ class DashboardActivityWidgetSchedule extends StatelessWidget {
   Widget build(BuildContext context) {
     final data = ScheduleData();
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
-      child: ColoredBox(
-        color: DashboardColors.justWhite,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              textAlign: TextAlign.center,
-              DashboardStrings.upcomingSchedule,
-              style: Theme.of(context).textTheme.labelMedium,
-            ),
-            const SizedBox(height: 20),
-            for (int index = 0; index < data.schedules.length; index++)
-              DashboardActivityWidgetScheduleCard(data: data, index: index),
-          ],
-        ),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            textAlign: TextAlign.center,
+            DashboardStrings.upcomingSchedule,
+            style: Theme.of(context).textTheme.labelMedium,
+          ),
+          const SizedBox(height: 20),
+          for (int index = 0; index < data.schedules.length; index++)
+            DashboardActivityWidgetScheduleCard(data: data, index: index),
+        ],
       ),
     );
   }

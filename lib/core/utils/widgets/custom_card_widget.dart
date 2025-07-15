@@ -8,9 +8,9 @@ class CustomCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
-        border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.1),
+        border: Border.all(color: DashboardColors.drawerIconGrey, width: 1.2),
         borderRadius: BorderRadiusDirectional.circular(10),
         color: DashboardColors.backgroundColor,
       ),

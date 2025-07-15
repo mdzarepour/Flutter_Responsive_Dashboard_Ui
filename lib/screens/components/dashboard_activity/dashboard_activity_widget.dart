@@ -11,8 +11,8 @@ class DashboardActivityWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(13),
-        color: DashboardColors.justWhite,
+        borderRadius: BorderRadius.circular(10),
+        color: DashboardColors.scaffoldDarkBackGround,
         border: Border.all(color: DashboardColors.drawerIconGrey, width: 0.2),
       ),
       child: Column(

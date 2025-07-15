@@ -18,8 +18,14 @@ class DashboardMainContentWidgetTableCard extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     return Padding(
       padding: const EdgeInsets.only(bottom: 20),
-      child: CustomCardWidget(
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: DashboardColors.materialFirstGrey),
+          borderRadius: BorderRadius.circular(8),
+          color: DashboardColors.scaffoldDarkBackGround,
+        ),
         child: ListTile(
+          contentPadding: const EdgeInsets.symmetric(horizontal: 20),
           trailing: SizedBox(
             width: 100,
             child: Row(
@@ -40,13 +46,16 @@ class DashboardMainContentWidgetTableCard extends StatelessWidget {
             maxLines: 1,
             data.tableItemsData[index].description,
           ),
-          subtitle: Text(
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
-            style: textTheme.labelSmall!.copyWith(
-              color: DashboardColors.secondarySubtitleColor,
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 5),
+            child: Text(
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+              style: textTheme.labelSmall!.copyWith(
+                color: DashboardColors.secondarySubtitleColor,
+              ),
+              data.tableItemsData[index].date,
             ),
-            data.tableItemsData[index].date,
           ),
         ),
       ),

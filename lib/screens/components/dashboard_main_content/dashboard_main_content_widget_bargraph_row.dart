@@ -19,7 +19,7 @@ class DashboardMainContentWidgetBargraphRow extends StatelessWidget {
         mainAxisSpacing: 15,
         crossAxisSpacing: 15,
         childAspectRatio: isMobile ? 1 / 0.4 : 2 / 1.1,
-        mainAxisExtent: 130,
+        mainAxisExtent: 180,
       ),
       itemBuilder: (context, index) {
         return DashboardMainContentWidgetBargraphRowCard(
